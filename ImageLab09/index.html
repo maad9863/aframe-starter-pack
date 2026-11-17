@@ -2,15 +2,19 @@
 <html>
   <head>
     <script src="https://aframe.io/releases/1.7.1/aframe.min.js"> </script>
-     <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
   </head>
   <body>
 <a-scene>
-  <a-entity environment="preset: forest; groundColor: #CCCCCC; groundColor2: white; dressingColor: white; skyType: color; skyColor: lightblue"></a-entity>
-  
-  <a-sphere position="0 0.5 -4" radius="0.5" color="white"></a-sphere>
-  <a-sphere position="0 1.2 -4" radius="0.35" color="white"></a-sphere>
-  <a-sphere position="0 1.7 -4" radius="0.25" color="white"></a-sphere>
+  <<a-scene>
+    <a-box position="-1 0.5 -3" rotation="0 45 0" src="Beach cooler.png"></a-box>
+
+    <a-sphere position="0 1.25 -5" radius="1.25" src="Beach ball.webp"></a-sphere>
+
+    <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" src="Beach bucket.jpeg"></a-cylinder>
+
+    <a-plane position="0 0 -4" rotation="-90 0 0" width="15" height="15" color="#E6D3A3"></a-plane>
+
+    <a-sky src="Beach background.avif"></a-sky>
 </a-scene>    
   </body>
 </html>
